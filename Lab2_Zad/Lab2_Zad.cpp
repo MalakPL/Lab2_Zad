@@ -129,7 +129,7 @@ int IleDniMaMiesiac(int N)
 
 string JakaPogoda(int N)
 {
-	return (N >= 4 && N <= 9) ? "Slonecznie" : "Pochmurno";
+	return (N >= 4 && N <= 9) ? "slonecznie" : "sochmurno";
 }
 
 void Zadanie3()
@@ -142,51 +142,51 @@ void Zadanie3()
 	switch (N)
 	{
 	case 1:
-		cout << "Styczen ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Styczen ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 2:
-		cout << "Luty ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Luty ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 3:
-		cout << "Marzec ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Marzec ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 4:
-		cout << "Kwiecien ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Kwiecien ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 5:
-		cout << "Maj ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Maj ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 6:
-		cout << "Czerwiec ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Czerwiec ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 7:
-		cout << "Lipiec ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Lipiec ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 8:
-		cout << "Sierpien ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Sierpien ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 9:
-		cout << "Wrzesien ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Wrzesien ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 10:
-		cout << "Pazdziernik ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Pazdziernik ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 11:
-		cout << "Listopad ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Listopad ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	case 12:
-		cout << "Grudzien ma " << IleDniMaMiesiac(N) << " dni i jest " << JakaPogoda(N) << endl;
+		cout << "Grudzien ma " << IleDniMaMiesiac(N) << " dni i jest w nim " << JakaPogoda(N) << endl;
 		break;
 
 	default:
