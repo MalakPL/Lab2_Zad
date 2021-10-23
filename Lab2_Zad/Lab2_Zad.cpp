@@ -129,6 +129,8 @@ string JakaPogoda(int N)
 void Zadanie3()
 {
 	int N;
+
+	cout << "Podaj numer miesiaca: ";
 	cin >> N;
 
 	switch (N)
