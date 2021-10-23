@@ -112,6 +112,12 @@ void Zadanie2()
 int IleDniMaMiesiac(int N)
 {
 	/*Na kostkach dloni liczone */
+
+	if (N == 2)
+	{
+		return 28; //FIX
+	}
+
 	if (N >= 1 && N <= 7)
 	{
 		return (N % 2 == 1) ? 31 : 30;
