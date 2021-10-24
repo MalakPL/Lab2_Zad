@@ -75,7 +75,7 @@ auto Zadanie2() -> void
 
 #pragma region B) Wypisze wiersz gwiazdek o d³ugoœci "a".
 	char* WierszGwiazdek = new char[A + 1]; /* +1 jest zarezerwowane dla zanku null na koñcu string'a */
-	memset(WierszGwiazdek, (int)'*', A); /* Wype³niamy zmienn¹ znakami gwiazdek */
+	memset(WierszGwiazdek, (int)'*', A); /* Wype³niamy zmienn¹ znakami gwiazdek, mo¿na te¿ u¿yc std::fill_n(WierszGwiazdek, A, '*'); */
 	WierszGwiazdek[A] = 0x00; //NULL na koñcu string'a
 
 	cout << "Wiersz o dlugosci 'a':" << endl;
