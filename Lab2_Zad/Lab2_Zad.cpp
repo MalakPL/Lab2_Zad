@@ -18,16 +18,30 @@ auto Zadanie1() -> void
 		throw exception{ IntCastExceptionMessage };
 	}
 
+	/* Sposób naiwny */
 	int Suma = 0;
 	for (int i = 1; i <= N; i++)
 	{
-		/*
-			Suma szeregu liczb trójk¹tnych
-			https://pl.wikipedia.org/wiki/Liczba_tr%C3%B3jk%C4%85tna
-		*/
-		Suma += (i * i + i) / 2;
+		int SumaPomocnicza = 0;
+		for (int j = 1; j <= i; j++)
+		{
+			SumaPomocnicza += j;
+
+			cout << j;
+			if (j < i)
+			{
+				cout << " + ";
+			}
+		}
+		Suma += SumaPomocnicza;
+
+		cout << " = " << SumaPomocnicza << endl;
 	}
-	cout << "Wynik: " << Suma << endl;
+
+	cout << "Suma szeregu (naiwna): " << Suma << endl;
+
+	/* Sposób preferowany */
+	cout << "Suma szeregu (preferowana): " << (N*(N+1)*(N+2))/6 << endl << endl;
 }
 
 
