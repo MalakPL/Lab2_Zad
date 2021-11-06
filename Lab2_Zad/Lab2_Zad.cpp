@@ -41,7 +41,7 @@ auto Zadanie1() -> void
 	cout << "Suma szeregu (naiwna): " << Suma << endl;
 
 	/* Sposób preferowany */
-	cout << "Suma szeregu (preferowana): " << (N*(N+1)*(N+2))/6 << endl << endl;
+	cout << "Suma szeregu (preferowana): " << (N * (N + 1) * (N + 2)) / 6 << endl << endl;
 }
 
 
@@ -89,7 +89,7 @@ auto Zadanie2() -> void
 
 #pragma region B) Wypisze wiersz gwiazdek o d³ugoœci "a".
 	char* WierszGwiazdek = new char[A + 1]; /* +1 jest zarezerwowane dla zanku null na koñcu string'a */
-	memset(WierszGwiazdek, (int)'*', A); /* Wype³niamy zmienn¹ znakami gwiazdek, mo¿na te¿ u¿yc std::fill_n(WierszGwiazdek, A, '*'); */
+	memset(WierszGwiazdek, (int)'*', A); /* Wype³niamy pamiêæ zmiennej znakami gwiazdek, mo¿na te¿ u¿yc std::fill_n(WierszGwiazdek, A, '*'); */
 	WierszGwiazdek[A] = 0x00; //NULL na koñcu string'a
 
 	cout << "Wiersz o dlugosci 'a':" << endl;
@@ -124,7 +124,7 @@ auto Zadanie2() -> void
 
 #pragma region E) Wypisze obwód (obramowanie) prostok¹tugwiazdek o wymiarach "a" na "b".  (Wskazówka: warto skorzystaæ z operatora logicznego || -OR).
 	cout << "Obwod prostokatu o wymiarch 'a' na 'b':" << endl;
-	
+
 	for (int y = 0; y < A; y++)
 	{
 		for (int x = 0; x < B; x++)
@@ -150,7 +150,7 @@ auto Zadanie2() -> void
 
 #pragma region 	F*)
 	cout << "Trojkat prostokatny rownoramienny z katem prostem w lewym dolnm rogu:" << endl;
-	
+
 	for (int y = 0; y < A; y++)
 	{
 		for (int x = 0; x < A; x++)
@@ -172,7 +172,7 @@ auto Zadanie2() -> void
 
 #pragma region G*)
 	cout << "Trojkat prostokatny rownoramienny z katem prostem w prwym gornm rogu:" << endl;
-	
+
 	for (int y = 0; y < A; y++)
 	{
 		for (int x = 0; x < A; x++)
@@ -203,7 +203,7 @@ auto Zadanie2() -> void
 */
 
 auto IleDniMaMiesiac(const int N) -> int;
-auto JakaPogoda(int N)->string;
+auto JakaPogoda(int N) -> string;
 
 enum Miesiac
 {
@@ -225,7 +225,7 @@ auto Zadanie3() -> void
 {
 #pragma region a) Pobierze od U¿ytkownika liczbê z przedzia³u [1,12], reprezentuj¹c¹ wybrany miesi¹c w roku.
 	int N;
-	
+
 	cout << "Podaj numer miesiaca: ";
 	cin >> N;
 
@@ -326,7 +326,7 @@ auto main() -> int
 	}
 	catch (exception ex)
 	{
-		cout << ex.what() << endl;
+		cout << "Wyj¹tek: " << ex.what() << endl;
 
 		return 1; /* Zwracamy b³¹d */
 	}
